@@ -1,0 +1,20 @@
+x = 0
+x = int(input("Enter the number of day you'd like to leave between 0 to 6"))
+
+if x > 6 or x<0:
+    print("bad value of x try again")
+    x= int(input("Enter value of x between 0 to 6"))
+
+    print (x)
+y = int(input("Enter the number of days you gonna go for vacation"))
+
+z = x+y
+print (z)
+
+z = z%7
+print(z)
+
+days = ('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday')
+for i in days:
+    if i == z:
+        print(i)
