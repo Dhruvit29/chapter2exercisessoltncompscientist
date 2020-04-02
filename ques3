@@ -1,0 +1,27 @@
+time_now=0
+alarm_after = 0
+time_now = int(input("Enter vlaue of time as a number between 1 to 24"))
+alarm_after = int(input("Enter after how many hours you want the timer to go off"))
+
+if time_now > 24:
+    print("Enter value of time again as it was more than 24 hour")
+    time_now =int(input("Enter value of time again"))
+else:
+   print(time_now)
+
+alarm_set = 0
+alarm_set = time_now + alarm_after
+
+print (alarm_set)
+
+alarm_set = alarm_set%24
+print(alarm_set)
+
+if alarm_after > 12 :
+    alarm_set = str(alarm_set - 12) + str('pm')
+    #print (alarm_set)
+else:
+   alarm_set = str(alarm_set) + str('am')
+
+
+print(alarm_set)
