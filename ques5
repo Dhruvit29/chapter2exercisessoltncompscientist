@@ -1,0 +1,15 @@
+
+x = "All work and no play makes Jack a dull boy"
+x = str(x)
+
+print (x)
+
+x = x.split()
+
+print(x)
+
+y = ' '
+
+x = y.join(x)
+
+print(x)
